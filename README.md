@@ -136,4 +136,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-For support, email [your-email@neub.edu.bd] or create an issue in the repository. 
+For support, email [singhosudip333@gmail.com] or create an issue in the repository. 
