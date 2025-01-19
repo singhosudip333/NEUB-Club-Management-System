@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3ccfcf;
+    --accent-color: #f72585;
+    --text-color: #2b2d42;
+    --text-light: #6c757d;
+    --bg-light: #f8f9fa;
+    --bg-secondary: #e9ecef;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f5f7ff 0%, #fff 100%);
+    min-height: 100vh;
+}
+
+.sign_logo img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.sign_logo img:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+.entry {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius);
+    padding: 2.8rem;
+    box-shadow: 0 8px 32px rgba(67, 97, 238, 0.1);
+    transition: var(--transition);
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(67, 97, 238, 0.15);
+}
+
+label {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    display: block;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+}
+
+.form-control {
+    border: 2px solid var(--bg-secondary);
+    border-radius: var(--border-radius);
+    padding: 0.85rem 1.2rem;
+    font-size: 1rem;
+    transition: var(--transition);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(67, 97, 238, 0.1);
+    background: white;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.85rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: var(--transition);
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary-color), #6385ff);
+    border: none;
+    color: white;
+}
+
+.btn-secondary {
+    background: var(--bg-light);
+    border: 1px solid var(--bg-secondary);
+    color: var(--text-color);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(67, 97, 238, 0.2);
+    color: #2b2d42;
+}
+
+.btn-secondary:hover {
+    background: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.log_in {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--bg-secondary);
+}
+
+.log_in p {
+    font-size: 0.95rem;
+    margin: 0;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.log_in a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.log_in a:hover {
+    color: var(--accent-color);
+    transform: translateX(3px);
+}
+
+.footer_section {
+    background: transparent;
+    padding: 1.5rem 0;
+    margin-top: auto;
+}
+
+.footer_section h5 {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin: 0;
+}
+
+.content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}

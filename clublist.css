@@ -1,0 +1,173 @@
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3ccfcf;
+    --accent-color: #f72585;
+    --text-color: #2b2d42;
+    --text-light: #6c757d;
+    --bg-light: #f8f9fa;
+    --bg-secondary: #e9ecef;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+    color: var(--text-color);
+    background: linear-gradient(135deg, #f5f7ff 0%, #fff 100%);
+    line-height: 1.6;
+}
+
+/* <!----------------------------- Menubar -------------------------> */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-sm);
+    height: 60px;
+    transition: var(--transition);
+}
+.logo_img {
+    margin: auto;
+    width: 80px;
+    transition: var(--transition);
+}
+.logo_img:hover {
+    transform: scale(1.05);
+}
+.bg-light {
+    background-color: var(--bg-light) !important;
+}
+.menu {
+    background-color: var(--bg-light);
+}
+
+/* Search Section */
+.input-group .form-control {
+    border: 2px solid var(--bg-secondary);
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1.25rem;
+    transition: var(--transition);
+}
+
+.input-group .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(67, 97, 238, 0.15);
+}
+
+.input-group .btn-primary {
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.input-group .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Club Cards */
+.clubs {
+    padding: 2rem 0 4rem;
+}
+
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.btn-success {
+    border: none;
+}
+
+.btn-danger {
+    border: none;
+}
+
+/* Footer */
+.footer_section {
+    background: linear-gradient(45deg, #2d3436 0%, #636e72 100%);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer_section h5 {
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.75rem 1rem;
+    }
+
+    .clubs {
+        padding: 1rem 0 3rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+    

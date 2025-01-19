@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Meeting</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .navbar {
+        background-color: #343a40;
+      }
+      .navbar-brand,
+      .nav-link {
+        color: #fff !important;
+      }
+      .nav-link:hover {
+        color: #f8f9fa;
+        background-color: #495057;
+        border-radius: 5px;
+      }
+      .content {
+        padding: 20px;
+      }
+      .meeting-form {
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 20px;
+        border: 1px solid #ced4da;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">Edit Meeting</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container content">
+      <h2>Edit Meeting Details</h2>
+      <form id="editMeetingForm" action="update_meeting.php" method="POST">
+        <div class="meeting-form">
+          <div class="form-group">
+            <label for="meetingTitle">Meeting Title</label>
+            <input
+              type="text"
+              class="form-control"
+              name="meetingTitle"
+              id="meetingTitle"
+              value="Weekly Review"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="meetingDate">Date</label>
+            <input
+              type="date"
+              class="form-control"
+              name="meetingDate"
+              id="meetingDate"
+              value="2024-11-01"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="meetingTime">Time</label>
+            <input
+              type="time"
+              class="form-control"
+              name="meetingTime"
+              id="meetingTime"
+              value="14:00"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="meetingLink">Meeting Link</label>
+            <input
+              type="url"
+              class="form-control"
+              name="meetingLink"
+              id="meetingLink"
+              value="https://example.com/meeting1"
+              required
+            />
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">
+              Update Meeting
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

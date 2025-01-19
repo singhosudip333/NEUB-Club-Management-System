@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NEUB Club Management | Connect, Engage, Grow</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="NEUB Club Management - Your gateway to university clubs, events, and activities. Join clubs, participate in events, and make the most of your university life." />
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="photos/icon/Blue & White Modern Swimming Club Logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Menubar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="photos/icon/Blue & White Modern Swimming Club Logo.png" alt="Logo" class="logo-img">
+        <span class="ml-2">NEUB Club Management System</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="clublist.php">Clubs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item ml-lg-2 dropdown">
+            <button class="btn btn-outline-primary dropdown-toggle" type="button" id="loginDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-sign-in-alt"></i> Log In
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
+              <a class="dropdown-item" href="log_in.html">
+                <i class="fas fa-user"></i> Student Login
+              </a>
+              <a class="dropdown-item" href="admin.php">
+                <i class="fas fa-user-shield"></i> Club Admin Login
+              </a>
+              <a class="dropdown-item" href="superadmin/adminlogin.html">
+                <i class="fas fa-user-cog"></i> Super Admin Login
+              </a>
+            </div>
+          </li>
+          <li class="nav-item ml-lg-2">
+            <a class="btn btn-primary" href="sign_up.html">
+              <i class="fas fa-user-plus"></i> Register
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="hero-content">
+              <h1 class="hero-title mb-4">
+                Welcome to NEUB Club Management
+              </h1>
+              <p class="hero-subtitle mb-4">Join university clubs, participate in events, and connect with fellow students. Discover opportunities to grow and learn together.</p>
+              <div class="hero-buttons mb-4">
+                <a href="clublist.php" class="btn btn-primary btn-lg mr-3">
+                  <i class="fas fa-compass"></i> Explore Clubs
+                </a>
+                <a href="sign_up.html" class="btn btn-outline-dark btn-lg">
+                  <i class="fas fa-user-plus"></i> Join Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-stats">
+              <div class="row text-center">
+                <div class="col-4">
+                  <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Active Clubs</p>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p>Members</p>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Events</p>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-features mt-4">
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Connect with like-minded students</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Participate in exciting events</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Develop leadership skills</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Clubs -->
+    <section class="featured-clubs py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-badge">Discover</span>
+          <h2 class="section-title">Featured Clubs</h2>
+          <p class="section-subtitle">Join these amazing communities and start your journey</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="club-card">
+              <div class="club-card-badge">Most Active</div>
+              <div class="club-card-image">
+                <img src="photos/clubs/caltural.png" alt="Cultural Club">
+              </div>
+              <div class="club-card-body">
+                <h3 class="club-title">Cultural Club</h3>
+                <p class="club-description">Celebrate diversity through music, and cultural events.</p>
+                <div class="club-stats">
+                  <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <span>500+ Members</span>
+                  </div>
+                  <div class="stat">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>20+ Events</span>
+                  </div>
+                </div>
+                <div class="club-actions">
+                  <a href="#" class="btn btn-primary btn-block">View Club</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="club-card">
+              <div class="club-card-badge">Trending</div>
+              <div class="club-card-image">
+                <img src="photos/clubs/cosmic.JPG" alt="Social Service Club">
+              </div>
+              <div class="club-card-body">
+                <h3 class="club-title">Social Service Club</h3>
+                <p class="club-description">Make a difference in the community through service.</p>
+                <div class="club-stats">
+                  <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <span>300+ Members</span>
+                  </div>
+                  <div class="stat">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>15+ Events</span>
+                  </div>
+                </div>
+                <div class="club-actions">
+                  <a href="#" class="btn btn-primary btn-block">View Club</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="club-card">
+              <div class="club-card-badge">New</div>
+              <div class="club-card-image">
+                <img src="photos/clubs/cosmicray.jpg" alt="Cosmic Ray">
+              </div>
+              <div class="club-card-body">
+                <h3 class="club-title">Cosmic Ray</h3>
+                <p class="club-description">Explore the mysteries of space and science.</p>
+                <div class="club-stats">
+                  <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <span>200+ Members</span>
+                  </div>
+                  <div class="stat">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>10+ Events</span>
+                  </div>
+                </div>
+                <div class="club-actions">
+                  <a href="#" class="btn btn-primary btn-block">View Club</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="club-card">
+              <div class="club-card-badge">Popular</div>
+              <div class="club-card-image">
+                <img src="photos/clubs/sports.jpg" alt="Sports Club">
+              </div>
+              <div class="club-card-body">
+                <h3 class="club-title">Sports Club</h3>
+                <p class="club-description">Stay active and competitive with sports activities.</p>
+                <div class="club-stats">
+                  <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <span>400+ Members</span>
+                  </div>
+                  <div class="stat">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>25+ Events</span>
+                  </div>
+                </div>
+                <div class="club-actions">
+                  <a href="#" class="btn btn-primary btn-block">View Club</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-badge">About Us</span>
+                <h2 class="section-title">NEUB Club Management</h2>
+                <p class="section-subtitle">Empowering students to discover, connect, and grow through meaningful experiences</p>
+            </div>
+            
+            <div class="row stats-row mb-5">
+                <div class="col-md-3 text-center">
+                    <div class="about-stat">
+                        <i class="fas fa-users"></i>
+                        <h3>1000+</h3>
+                        <p>Active Members</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="about-stat">
+                        <i class="fas fa-flag"></i>
+                        <h3>15+</h3>
+                        <p>Active Clubs</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="about-stat">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>50+</h3>
+                        <p>Events Yearly</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="about-stat">
+                        <i class="fas fa-award"></i>
+                        <h3>5+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-features">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Community Building</h4>
+                                <p>Join multiple clubs based on your interests and connect with like-minded peers</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Event Management</h4>
+                                <p>Participate in and organize exciting events, workshops, and activities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="about-features">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Skill Development</h4>
+                                <p>Develop leadership, organizational, and interpersonal skills</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Recognition</h4>
+                                <p>Get recognized for your achievements and contributions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <div class="about-cta">
+                    <a href="sign_up.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-rocket"></i> Get Started
+                    </a>
+                    <a href="clublist.php" class="btn btn-outline-primary btn-lg ml-3">
+                        <i class="fas fa-list"></i> View Clubs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-badge">Features</span>
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">Experience the best of university club management</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Easy Registration</h4>
+                            <p>Simple and quick registration process for all students. Get started in minutes.</p>
+                            <a href="sign_up.html" class="feature-link">
+                                Register Now <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-door-open"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Club Access</h4>
+                            <p>Browse and join clubs that match your interests. Find your perfect community.</p>
+                            <a href="clublist.php" class="feature-link">
+                                View Clubs <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Event Participation</h4>
+                            <p>Register and participate in club events easily. Stay engaged with activities.</p>
+                            <a href="#" class="feature-link">
+                                View Events <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Blog Access</h4>
+                            <p>Read and share club updates and stories. Stay informed with latest news.</p>
+                            <a href="#" class="feature-link">
+                                Read Blog <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-badge">Testimonials</span>
+                <h2 class="section-title">What Our Members Say</h2>
+                <p class="section-subtitle">Hear from our amazing community members</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"NEUB Club Management has transformed my university experience. I've made great friends and developed amazing leadership skills."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="photos/image/polash.jpg" alt="Partho Das">
+                            </div>
+                            <div class="author-info">
+                                <h4>Partho Das</h4>
+                                <p>Cultural Club Member</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"The platform makes it incredibly easy to stay connected with club activities and participate in various events."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="photos/image/polash.jpg" alt="Sarah Ahmed">
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Ahmed</h4>
+                                <p>Sports Club Member</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"Being part of multiple clubs has helped me discover new interests and build a strong network of friends."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="photos/image/polash.jpg" alt="Rahim Khan">
+                            </div>
+                            <div class="author-info">
+                                <h4>Rahim Khan</h4>
+                                <p>Science Club Member</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Blog Posts -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-badge">Latest Updates</span>
+                <h2 class="section-title">Recent Blog Posts</h2>
+                <p class="section-subtitle">Stay informed with our latest news and updates</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="co_organizer/uploads/hq720.jpg" alt="Sports Week">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar-alt"></i> March 15, 2024</span>
+                                <span><i class="fas fa-tag"></i> Sports</span>
+                            </div>
+                            <h3 class="blog-title">CSE Sports Week 2024</h3>
+                            <p class="blog-excerpt">Annual sports festival featuring multiple competitions including cricket, football, and indoor games. Join us for an exciting week of sports and fun!</p>
+                            <div class="blog-footer">
+                                <a href="blog1.html" class="blog-link">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="co_organizer/uploads/1644782608254-01.jpeg" alt="Cultural Event">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar-alt"></i> March 10, 2024</span>
+                                <span><i class="fas fa-tag"></i> Cultural</span>
+                            </div>
+                            <h3 class="blog-title">Cultural Club Freshers Welcome</h3>
+                            <p class="blog-excerpt">Experience an unforgettable evening of cultural performances, music, and dance as we welcome our new members in style.</p>
+                            <div class="blog-footer">
+                                <a href="blog2.html" class="blog-link">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="co_organizer/uploads/1625685336931.jpg" alt="Concert Night">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar-alt"></i> March 20, 2024</span>
+                                <span><i class="fas fa-tag"></i> Music</span>
+                            </div>
+                            <h3 class="blog-title">Cosmic Ray Concert Night</h3>
+                            <p class="blog-excerpt">Get ready for an electrifying evening of live music performances by talented artists. Don't miss this spectacular event!</p>
+                            <div class="blog-footer">
+                                <a href="blog3.html" class="blog-link">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="blogs.php" class="btn btn-outline-primary btn-lg">
+                    <i class="fas fa-book-reader"></i> View All Blogs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Get In Touch</h2>
+                <p>Have questions? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">About NEUB Club Management</h5>
+            <p class="text-white-50">Empowering students to discover their passions, develop skills, and build lasting connections through university clubs.</p>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white-50">Home</a></li>
+              <li><a href="#" class="text-white-50">Clubs</a></li>
+              <li><a href="#" class="text-white-50">Events</a></li>
+              <li><a href="#" class="text-white-50">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-white mb-4">Connect With Us</h5>
+            <div class="social-links">
+              <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-light mt-4 mb-4">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="text-white-50 mb-0">© 2024 NEUB Club Management. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

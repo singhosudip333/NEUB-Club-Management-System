@@ -1,0 +1,30 @@
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# PHP files
+/vendor/
+*.log
+
+# Environment files
+.env
+config.php
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Database dumps
+*.sql
+
+# Dependencies
+/node_modules/
+/composer.vendor/ 

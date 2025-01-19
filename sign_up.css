@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign_logo img {
+    width: 180px;
+    transition: transform 0.3s ease;
+}
+
+.sign_logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Adjust the column widths for larger forms */
+@media (min-width: 1200px) {
+    .col-xl-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .col-lg-5 {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+}
+
+.entry {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.entry h2 {
+    color: #2d3436;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+label {
+    font-weight: 600;
+    color: #2d3436;
+    font-size: 0.9rem;
+}
+
+.form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+/* Specific styles for the select dropdown */
+select.form-control {
+    appearance: auto;
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+    padding-right: 30px;
+    background-color: white;
+    cursor: pointer;
+    color: #495057;
+}
+
+select.form-control option {
+    padding: 12px;
+    background-color: white;
+    color: #495057;
+}
+
+select.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+}
+
+.btn-primary {
+    padding: 12px 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.forgot-password {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sign-up-link {
+    border-top: 1px solid #e9ecef;
+    padding-top: 20px;
+}
+
+.sign-up-link p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+.sign-up-link a {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sign-up-link a:hover {
+    color: #0056b3;
+}
+
+.form-check-label {
+    font-weight: normal;
+    color: #6c757d;
+}
+
+.footer_section {
+    background-color: #f1f2f6;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+.footer_section h5 {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+.footer {
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: black;
+}
+
+.footer a {
+    color: black;
+}
+
+.footer_part {
+    border-top: 2px solid rgb(226, 222, 222);
+    margin-top: 10px;
+    background-color: #f1f2f6;
+}
+
+.back-button a {
+    color: #2d3436;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.back-button a:hover {
+    color: #007bff;
+}
+
+.back-button i {
+    margin-right: 5px;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="sign_up.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="photos/icon/Blue & White Modern Swimming Club Logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="login-container">
+      <section class="logo p-4">
+        <div class="sign_logo text-center">
+          <a href="index.html"
+            ><img
+              src="photos/icon/Blue & White Modern Swimming Club Logo.png"
+              alt="Logo"
+          /></a>
+        </div>
+      </section>
+
+      <section class="p-2 from_part">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-4 col-lg-5 col-md-6">
+              <div class="entry">
+                <div class="back-button mb-3">
+                  <a href="index.html"><i class="fa fa-arrow-left"></i> Back</a>
+                </div>
+                <h2 class="text-center mb-4">Create Account</h2>
+                <form method="POST" action="register.php">
+                  <div class="form-group">
+                    <label for="nameInput">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nameInput"
+                      name="c_name"
+                      placeholder="Enter your Name"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="studentIdInput">Student ID</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="studentIdInput"
+                      name="student_id"
+                      placeholder="Enter your student ID"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="departmentInput">Department</label>
+                    <select
+                      class="form-control"
+                      id="departmentInput"
+                      name="c_department"
+                    >
+                      <option value="" disabled selected>Select your department</option>
+                      <option value="CSE">CSE</option>
+                      <option value="BBA">BBA</option>
+                      <option value="English">English</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="sessionInput">Session</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="sessionInput"
+                      name="session"
+                      placeholder="Enter your session"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="emailInput">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailInput"
+                      name="email"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phoneInput">Phone Number</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phoneInput"
+                      name="phone_number"
+                      placeholder="Enter your phone number"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="passwordInput">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="passwordInput"
+                      name="password"
+                      placeholder="Enter password"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="agreeCheck"
+                      required
+                    />
+                    <label class="form-check-label" for="agreeCheck"
+                      >I agree to the terms and conditions</label
+                    >
+                  </div>
+
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-block">
+                      Create your Account
+                    </button>
+                  </div>
+                </form>
+
+                <div class="sign-up-link text-center mt-4">
+                  <p>
+                    Already have an account?
+                    <a href="log_in.html"
+                      >Log In <i class="fa fa-arrow-right" aria-hidden="true"></i
+                    ></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer_section py-3 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl">
+              <h5 class="text-center">
+                © Copyright 2024 | NEUB Club Management | All Rights Reserved
+              </h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="https://use.fontawesome.com/3aa1570a43.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

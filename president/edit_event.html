@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Event</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .navbar {
+        background-color: #343a40;
+      }
+      .navbar-brand,
+      .nav-link {
+        color: #fff !important;
+      }
+      .nav-link:hover {
+        color: #f8f9fa;
+        background-color: #495057;
+        border-radius: 5px;
+      }
+      .content {
+        padding: 20px;
+      }
+      .event-form {
+        border: 1px solid #ced4da;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">Edit Event</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container content">
+      <h2>Edit Event Details</h2>
+      <form id="editEventForm" action="update_event.php" method="POST">
+        <div class="event-form">
+          <div class="form-group">
+            <label for="eventName">Event Name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="eventName"
+              id="eventName"
+              value="Annual Sports Day"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="eventDate">Date</label>
+            <input
+              type="date"
+              class="form-control"
+              name="eventDate"
+              id="eventDate"
+              value="2024-11-15"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="eventTime">Time</label>
+            <input
+              type="time"
+              class="form-control"
+              name="eventTime"
+              id="eventTime"
+              value="10:00"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="eventDescription">Description</label>
+            <textarea
+              class="form-control"
+              name="eventDescription"
+              id="eventDescription"
+              rows="3"
+              required
+            >
+Join us for a day of sports and fun!</textarea
+            >
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Update Event</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

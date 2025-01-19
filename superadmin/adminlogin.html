@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsive design -->
+    <title>Super Admin Login</title>
+    <!-- Title of the page -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      <!--
+      Bootstrap
+      CSS
+      for
+      styling
+      --
+    />
+    />
+    <style>
+      /* Styles for the body and container */
+      body {
+        background-color: #f8f9fa; /* Light background for better contrast */
+        height: 100vh; /* Full height for vertical centering */
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+      }
+      .container {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+        border-radius: 10px; /* Rounded corners for the container */
+        padding: 20px; /* Padding for inner spacing */
+        background-color: white; /* White background for the form */
+        width: 100%; /* Full width for responsiveness */
+        max-width: 400px; /* Maximum width for the form */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Main container for the login form -->
+      <h3 class="text-center">Super Admin Login</h3>
+      <!-- Title of the form -->
+      <form action="superadmin_login.php" method="POST">
+        <!-- Form submission to PHP script -->
+        <!-- Username input field -->
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            required
+          />
+        </div>
+        <!-- Password input field -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+        <!-- Submit and Back buttons -->
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+        <button
+          type="button"
+          class="btn btn-secondary btn-block"
+          onclick="window.history.back();"
+        >
+          Back
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
